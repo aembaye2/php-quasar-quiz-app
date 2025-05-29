@@ -1,0 +1,8 @@
+# to start the app:
+
+cd backend
+php -S 0.0.0.0:8000
+
+#check the backend at: http://localhost:8000/index.php
+
+# to start the frontend
