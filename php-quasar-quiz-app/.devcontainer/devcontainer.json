@@ -1,0 +1,13 @@
+{
+  "name": "PHP + Quasar Quiz App",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [80],
+  "postCreateCommand": "echo 'Ready!'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["octref.vetur", "bmewburn.vscode-intelephense-client"]
+    }
+  }
+}
