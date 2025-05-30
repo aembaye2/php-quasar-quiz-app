@@ -1,13 +1,17 @@
 {
-  "name": "PHP + Quasar Quiz App",
+  "name": "PHP + Node Dev Env",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "forwardPorts": [80],
-  "postCreateCommand": "echo 'Ready!'",
+  "forwardPorts": [5173, 8000],
+  "postCreateCommand": "npm install --prefix frontend/quasar-app && php backend/setup.php",
   "customizations": {
     "vscode": {
-      "extensions": ["octref.vetur", "bmewburn.vscode-intelephense-client"]
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "esbenp.prettier-vscode"
+      ]
     }
   }
 }
+
